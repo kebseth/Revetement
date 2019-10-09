@@ -1,7 +1,7 @@
 class Devi < MailForm::Base
-  attribute :name,  :validate => true
-  attribute :email,  :validate => true
-  attribute :message,  :validate => true
+  attribute :name, :validate => true
+  attribute :email, :validate => true
+  attribute :message, :validate => true
 
   def headers
     {
