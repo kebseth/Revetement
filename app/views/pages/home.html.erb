@@ -2,7 +2,7 @@
 <div class="home_part1">
 </div>
   <div class="container mt-5 ">
-    <div class="text-center home_card">
+    <div class="text-center home_card extra-padding">
       <h1 class="pt-2 red">Bouvet Revêtements</h1>
       <h3 class="mt-3 salmon">Artisan revêtement de sol</h3>
       <p class="mt-4">
@@ -11,14 +11,27 @@
         Nous proposons nos services aussi bien aux particuliers désirants rénover leur propriété, qu’aux entreprises ayant des chantiers de grandes envergures.</p>
     </div>
   </div>
-<div class="home_part2 m-5">
-  <div class="container text-center home_card">
-    <p>Nous portons un réel intérêt à la réduction des nuisances sonores, ainsi qu'à la propreté durant les travaux. <br>
-      Nous intervenons principalement à Rennes et ces alentours <br>
-    Enfin, nous accordons attention particulière à la qualité de nos réalisations et à la satisfaction de nos clients. </p>
+<div class="container">
+  <div class="row home_part2 mt-5 mb-5 d-flex home_card">
+    <div class="text-center extra-padding col-sm-4 d-flex align-items-center">
+      <p>Nous portons un réel intérêt à la réduction des nuisances sonores, ainsi qu'à la propreté durant les travaux. <br>
+        Nous intervenons principalement à Rennes et ces alentours. <br>
+      Enfin, nous accordons attention particulière à la qualité de nos réalisations et à la satisfaction de nos clients. </p>
+    </div>
+    <div class="image_desc1 col-sm-8">
+      <div id="floor_desc1">
+
+      </div>
+      <div class="linear-gradient">
+
+      </div>
+    </div>
   </div>
 </div>
 <div class="bande_contact  d-flex justify-content-around">
   <div class="bande_coordonnee">
-    <button class="btn btn-contact">Contactez-nous</button>
+    <%= link_to contact_index_path do  %>
+      <button class="btn btn-contact">Contactez-nous</button>
+    <% end %>
+  </div>
 </div>

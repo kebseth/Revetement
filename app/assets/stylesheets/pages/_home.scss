@@ -3,10 +3,33 @@
   align-items: center;
 }
 .home_card{
-  padding: 40px;
   background: white;
-  border-radius: 10px;
+  border-radius: 3px;
   opacity:0.8;
   height:80%;
   box-shadow: 0 0 2px grey;
+}
+.extra-padding{
+  padding: 40px;
+}
+
+.home_part2{
+  #floor_desc1{
+    width: 110%;
+    min-height:600px;
+    background: asset-url('floor_papa1.jpg') center no-repeat transparent;
+    background-size: cover;
+    float:left;
+  }
+  .image_desc1{
+    overflow:hidden;
+    width: 100%;
+    height:100%;
+  }
+}
+.linear-gradient{
+  background: linear-gradient(270deg, rgba(255,255,255,0), rgba(255,255,255,1));
+  width: 10%;
+  min-height:600px;
+  position: absolute;
 }

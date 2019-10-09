@@ -1,5 +1,5 @@
 <div class="contact">
-  <h2 class="text-center m-4"><i class="far fa-id-card"></i> Informations</h2>
+  <h2 class="text-center m-4 pt-5"><i class="far fa-id-card"></i> Informations</h2>
   <div class="card_info justify-content-around">
     <div class="subcard">
       <i class="far fa-envelope"></i>
@@ -10,7 +10,7 @@
     </div>
     <div class="subcard">
       <i class="fas fa-at"></i>
-      <p>bouvet.stephane1@gmail.com</p>
+      <p>bouvet.stephane71@gmail.com</p>
     </div>
     <div class="subcard">
       <i class="fas fa-phone"></i>
@@ -19,7 +19,7 @@
   </div>
   <h2 class="text-center m-4"><i class="far fa-calendar-alt"></i> Horaires d'ouverture</h2>
   <div class="container card_info_time">
-      <div class="subcard">
+    <div class="subcard">
       <div class="days subcenter">
         <div class="day">
           <p>Lundi</p>
@@ -42,8 +42,17 @@
           <p>8h00 - 12h00</p>
         </div>
       </div>
-
-      </div>
-
     </div>
+  </div>
+</div>
+<h2 class="text-center m-4"><i class="fas fa-map-marked-alt"></i> Localisation</h2>
+<div class="container mt-4">
+  <div
+    id="map"
+    class="subcenter"
+    style="width: 70%;
+    height: 450px;"
+    data-markers="<%= @marker.to_json %>"
+    data-mapbox-api-key="<%= ENV['MAPBOX_API_KEY'] %>"
+  ></div>
 </div>

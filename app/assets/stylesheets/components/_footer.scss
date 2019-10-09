@@ -1,13 +1,19 @@
 .footer {
-  background: #272634;
+  background: $dark;
   display: flex;
   align-items: center;
-  justify-content: space-around;
   height: 150px;
-  color: rgba(0,0,0,0.3);
-      position: relative;
-    top: 94px;
+  width:100%;
+  position: relative;
+  top: 94px;
+  p{
+    color: $red;
+  }
+  i{
+    color: $red;
+  }
 }
+
 
 .footer-links {
   display: flex;
@@ -18,38 +24,3 @@
   color : white;
   font-weight: bold;
 }
-
-.footer-links a {
-  color: white;
-  opacity: 0.10s;
-  text-decoration: none;
-  font-size: 35px;
-  padding: 0px 10px;
-}
-
-.links-text a {
-  display: inline-block;
-  text-decoration: none;
-  font-size: 18px;
-  font-weight: lighter;
-  color: white;
-  margin: 5px;
-}
-
-.fab.fa-facebook:hover {
- color: #4267B2;
-}
-.fab.fa-instagram:hover{
- background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
- -webkit-background-clip: text;
-         /* Also define standard property for compatibility */
-         background-clip: text;
- -webkit-text-fill-color: transparent;
-}
-.fab.fa-twitter:hover {
- color: #1EA1F1;
-}
-.fab.fa-linkedin:hover {
- color: #0077B5;
-}
-
