@@ -2,12 +2,13 @@
   width: 100%;
 
 }
-.field-form:active{
+.field-form:focus{
+  border: 1px solid $saumon;
     box-shadow: 0 0 8px $saumon;
 }
 
 .text-form{
 }
 .area-form{
-  height: 200px;
+  padding-bottom: 100px;
 }
