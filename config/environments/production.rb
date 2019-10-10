@@ -96,7 +96,7 @@ Rails.application.configure do
   config.action_mailer.delivery_method = :smtp
 
   ActionMailer::Base.smtp_settings = {
-    :user_name => apikey,
+    :user_name => 'apikey',
     :password => ENV["SENDGRID_API_KEY"],
     :domain => 'https://bouvet-revetements.cleverapps.io',
     :address => 'smtp.sendgrid.net',

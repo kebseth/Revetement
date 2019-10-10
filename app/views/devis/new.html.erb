@@ -5,14 +5,15 @@
   <%= f.text_field :name, required: true, class: 'w-50 field-form' %>
   <br>
 
-  <%= f.label :email %> <br>
+  <%= f.label :email, class: 'text-form'  %> <br>
   <%= f.text_field :email, required: true, class: "w-50 field-form" %>
   <br>
 
-  <%= f.label :message %> <br>
+  <%= f.label :message, class: 'text-form'  %> <br>
   <%= f.text_field :message, required: true, class: "w-100 field-form area-form" %>
   <br>
-
-  <%= f.submit 'Envoyer message', class: 'centerize mt-5 btn btn-contact' %>
+  <div class="text-center">
+  <%= f.submit 'Envoyer message', class: 'mt-5 btn btn-contact' %>
+  </div>
   <% end %>
 </div>
