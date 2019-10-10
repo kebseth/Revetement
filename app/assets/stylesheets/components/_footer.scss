@@ -13,7 +13,12 @@
     color: $red;
   }
 }
-
+.flexibility{
+  display: flex;
+}
+.ml-resp{
+  margin-left: 50px;
+}
 
 .footer-links {
   display: flex;
@@ -23,4 +28,13 @@
 .text-uppercase {
   color : white;
   font-weight: bold;
+}
+
+@media only screen and (max-width: 768px) {
+  .flexibility {display: block;}
+  .footer { height: 250px;}
+}
+
+@media only screen and (max-width: 480px) {
+  .ml-resp {margin-left:0}
 }

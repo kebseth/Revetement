@@ -1,12 +1,12 @@
-<h1 class="mt-5 text-center">Demande de devis</h1>
+<h1 class="mt-5 pt-5 text-center">Demande de devis</h1>
 <div class="container">
   <%= form_for @devis do |f| %>
   <%= f.label :name, class: 'mt-5 text-form' %> <br>
-  <%= f.text_field :name, required: true, class: 'w-50 field-form' %>
+  <%= f.text_field :name, required: true, class: 'w-100 field-form' %>
   <br>
 
   <%= f.label :email, class: 'text-form'  %> <br>
-  <%= f.text_field :email, required: true, class: "w-50 field-form" %>
+  <%= f.text_field :email, required: true, class: "w-100 field-form" %>
   <br>
 
   <%= f.label :message, class: 'text-form'  %> <br>
