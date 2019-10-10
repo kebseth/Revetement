@@ -2,17 +2,17 @@
 <div class="container">
   <%= form_for @devis do |f| %>
   <%= f.label :name, class: 'mt-5 text-form' %> <br>
-  <%= f.text_field :name, required: true, class: 'field-form' %>
+  <%= f.text_field :name, required: true, class: 'w-50 field-form' %>
   <br>
 
   <%= f.label :email %> <br>
-  <%= f.text_field :email, required: true %>
+  <%= f.text_field :email, required: true, class: "w-50 field-form" %>
   <br>
 
   <%= f.label :message %> <br>
-  <%= f.text_field :message, required: true %>
+  <%= f.text_field :message, required: true, class: "w-100 field-form area-form" %>
   <br>
 
-  <%= f.submit 'Envoyer message', class: 'mt-5 btn btn-primary' %>
+  <%= f.submit 'Envoyer message', class: 'center mt-5 btn btn-contact' %>
   <% end %>
 </div>

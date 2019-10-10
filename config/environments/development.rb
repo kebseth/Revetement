@@ -68,7 +68,5 @@ Rails.application.configure do
     :domain => 'https://bouvet-revetements.cleverapps.io',
     :address => 'smtp.sendgrid.net',
     :port => 587,
-    :authentication => :plain,
-    :enable_starttls_auto => true
   }
 end

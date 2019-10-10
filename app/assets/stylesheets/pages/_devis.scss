@@ -1,6 +1,13 @@
 .field-form{
   width: 100%;
+
+}
+.field-form:active{
+    box-shadow: 0 0 8px $saumon;
 }
 
 .text-form{
+}
+.area-form{
+  height: 200px;
 }
