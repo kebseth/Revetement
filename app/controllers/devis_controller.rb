@@ -7,10 +7,10 @@ class DevisController < ApplicationController
     @devis = Devi.new(params[:devi])
     @devis.request = request
     if @devis.deliver
-      flash.now[:error] = 'Le message a été envoyé'
-      redirect_to root_path
+      flash.now[:error] = nil
+      redirect_to root_path, notice: 'Le message a bien été envoyé'
     else
-      flash.now[:error] = 'Cannot send message.'
+      flash.now[:error] = 'Le message n\'a pas été envoyé'
       render :new
     end
   end
