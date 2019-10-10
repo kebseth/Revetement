@@ -1,8 +1,8 @@
 <h1 class="mt-5 text-center">Demande de devis</h1>
-<div class="container">
+<div class="container text-center">
   <%= form_for @devis do |f| %>
-  <%= f.label :name %> <br>
-  <%= f.text_field :name, required: true %>
+  <%= f.label :name, class: 'mt-5 text-form' %> <br>
+  <%= f.text_field :name, required: true, class: 'field-form' %>
   <br>
 
   <%= f.label :email %> <br>
@@ -13,22 +13,6 @@
   <%= f.text_field :message, required: true %>
   <br>
 
-  <%= f.submit 'Envoyer message', class: 'btn btn-primary' %>
+  <%= f.submit 'Envoyer message', class: 'mt-5 btn btn-primary' %>
   <% end %>
-
-
-
-
-  <label>Name</label><br>
-  <input type="text">
-
-  <br>
-
-  <label>Email</label><br>
-  <input type="text">
-
-  <br>
-
-  <label>Message</label><br>
-  <textarea id="" cols="30" rows="10"></textarea>
 </div>
