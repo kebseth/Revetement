@@ -24,6 +24,14 @@ nav.black {
     color: $creme;
   }
 }
+.logo{
+  background:black;
+  padding: 5px 10px;
+  border-radius:3px;
+  a:hover{
+    color: white;
+  }
+}
 
 .onglets{
   display: flex;
@@ -35,7 +43,7 @@ nav.black {
     transition-duration: .4s;
   }
   a:hover{
-    color:yellow;
+    color:$saumon;
     font-size: 27px;
     transition-duration: .4s;
   }

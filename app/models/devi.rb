@@ -1,12 +1,13 @@
 class Devi < MailForm::Base
-  attribute :name, :validate => true
+  attribute :nom, :validate => true
+  attribute :telephone, :validate => true
   attribute :email, :validate => true
   attribute :message, :validate => true
   def headers
     {
-      :subject => "Demande de devis",
+      :subject => "Demande de devis - tel: #{telephone} ",
       :to => "bouvet.richard@hotmail.fr",
-      :from => %("#{name}" <#{email}>)
+      :from => %("#{nom}" <#{email}>)
     }
   end
 end
