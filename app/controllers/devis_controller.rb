@@ -10,7 +10,7 @@ class DevisController < ApplicationController
       flash.now[:error] = nil
       redirect_to root_path, notice: 'Le message a bien été envoyé'
     else
-      flash.now[:error] = 'Le message n\'a pas été envoyé'
+      flash.now[:error] = "Le message n'a pas été envoyé"
       render :new
     end
   end
