@@ -140,6 +140,7 @@
         display: block;
         width: 70%;
         margin: 0 auto;
+        margin-top:-10px;
         font-family: $main-font;
         color: $main-color;
         label {
@@ -159,6 +160,7 @@
           cursor: pointer;
           transition: all .3s;
           .progressbar {
+
             position: absolute;
             top: 0;
             left: 0;
@@ -177,6 +179,7 @@
           span {
             font-size: 1.4em;
             font-weight: 700;
+            color:white;
           }
           &:hover {color: #e88382;}
         }
@@ -222,21 +225,21 @@
 @media only screen and (min-width: 1920px) {
   body {font-size: 22px;}
   .main-header .header-wrapper {width: 57%;}
-  #section-1 {height: 90vh;}
+  #section-1 {height: 93vh;}
   #section-1 .content-slider .slider .banner .banner-inner-wrapper {padding-top: 12em;}
 }
 
 @media only screen and (max-width: 1919px) {
   body {font-size: 20px;}
   .main-header .header-wrapper {width: 60%;}
-  #section-1 {height: 90vh;}
+  #section-1 {height: 93vh;}
   #section-1 .content-slider .slider .banner .banner-inner-wrapper {padding-top: 11em;}
 }
 
 @media only screen and (max-width: 1680px) {
   body {font-size: 18px;}
   .main-header .header-wrapper {width: 65%;}
-  #section-1 {height: 90vh;}
+  #section-1 {height: 93vh;}
   #section-1 .content-slider .slider .banner .banner-inner-wrapper {padding-top: 9em;}
 }
 
@@ -247,7 +250,7 @@
 
 @media only screen and (max-width: 1120px) {
   .main-header .header-wrapper .main-menu li {padding: 0.75em 1.4em;}
-  #section-1 {height: 90vh;}
+  #section-1 {height: 93vh;}
   #section-1 .content-slider nav {bottom: -0.2em;}
   #section-1 .content-slider .slider .banner .banner-inner-wrapper {padding-top: 7em;}
   #section-1 .content-slider .slider .banner .banner-inner-wrapper .line {margin: 2em auto;}
@@ -262,7 +265,7 @@
 
 @media only screen and (max-width: 860px) {
   .main-header .header-wrapper .main-menu li {padding: 0.75em 0.9em;}
-  #section-1 {height: 90vh;}
+  #section-1 {height: 98vh;}
   #section-1 .content-slider nav {bottom: -1em;}
   #section-1 .content-slider nav .controls {width: 90%;}
   #section-1 .content-slider .slider .banner .banner-inner-wrapper h2 {font-size: 2em;}
@@ -273,7 +276,7 @@
 
 @media only screen and (max-width: 768px) {
   .main-header .header-wrapper .main-menu li {padding: 0.75em 0.5em;}
-  #section-1 {height: 90vh;}
+  #section-1 {height: 98vh;}
   #section-1 .content-slider nav .controls {width: 100%;}
   #section-1 .content-slider nav .controls label {width: 19%; font-size: 0.8em;}
   #section-1 .content-slider .slider .banner .banner-inner-wrapper .line {margin: 1.7em auto;}
@@ -288,7 +291,7 @@
   .main-header .header-wrapper .main-menu li {padding: 0.2em 0.3em;}
   .main-header .header-wrapper .main-menu li:last-child,
   .main-header .header-wrapper .main-menu li:nth-child(6) {padding: 0.2em 0.7em;}
-  #section-1 {height: 90vh;}
+  #section-1 {height: 93vh;}
   #section-1 .content-slider nav {bottom: -0.5em;}
   #section-1 .content-slider nav .controls label {width: 40%; font-size: 0.7em;}
   #section-1 .content-slider .slider .banner .banner-inner-wrapper h2 {font-size: 1.5em;}
