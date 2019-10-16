@@ -18,6 +18,7 @@ gem 'jquery-rails'
 gem 'geocoder'
 gem 'mail_form'
 gem 'sendgrid-ruby'
+gem 'devise'
 
 group :development do
   gem 'web-console', '>= 3.3.0'
