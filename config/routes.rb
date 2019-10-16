@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  devise_for :user, skip: [:registrations]
   root to: 'pages#home'
   get 'contact/index'
   resources :contact, only: [:index]
