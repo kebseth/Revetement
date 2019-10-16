@@ -13,6 +13,15 @@ class SolsController < ApplicationController
     save_sol
   end
 
+  def destroy
+    @sol = Sol.find(params[:id])
+    if @sol.destroy
+      redirect_to sols_path
+    else
+      render :index
+    end
+  end
+
   private
 
   def save_sol

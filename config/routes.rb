@@ -4,5 +4,5 @@ Rails.application.routes.draw do
   get 'contact/index'
   resources :contact, only: [:index]
   resources :devis, only: [:new, :create]
-  resources :sols, only: [:index, :new, :create]
+  resources :sols, only: [:index, :new, :create, :destroy]
 end
