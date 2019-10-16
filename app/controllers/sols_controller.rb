@@ -1,6 +1,7 @@
 class SolsController < ApplicationController
   skip_before_action :authenticate_user!, only: [:index]
   def index
+    @sols = Sol.all
   end
 
   def new

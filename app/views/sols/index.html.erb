@@ -1,4 +1,14 @@
 <h1 class="pt-5 mt-5 text-center">Liste des sols</h1>
-<div class="container">
-
+<div class="container mt-5">
+  <div class="container row justify-content-center">
+    <div class="cards">
+    <% @sols.each do |sol| %>
+      <div class='sol-card mt-5'>
+        <%= image_tag cl_image_path(sol.photo, height: 150, width: 300, crop: :fill), alt: "Photo d'un sol" %>
+        <p class='mt-2'><%= sol.nom %></p>
+        <p><%= sol.prix %> €/m²</p>
+      </div>
+    <% end %>
+    </div>
+  </div>
 </div>

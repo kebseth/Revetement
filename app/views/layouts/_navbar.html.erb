@@ -6,7 +6,7 @@
     </p>
   </div>
   <ul class="onglets">
-    <li><%= link_to 'Sols', root_path %></li>
+    <li><%= link_to 'Sols', sols_path %></li>
     <% if user_signed_in? %>
       <li>|</li>
       <li><%= link_to 'Ajouter', new_sol_path %></li>
