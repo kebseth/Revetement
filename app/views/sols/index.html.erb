@@ -1,5 +1,11 @@
 <h1 class="pt-5 mt-5 text-center">Liste des sols</h1>
 <div class="container mt-5">
+  <p>Les prix calculés ne sont que des éstimations, pour avoir un devis, ou une plus large gamme de sol, veuillez nous contactez en appuyant sur ce bouton.</p>
+  <div class="text-center">
+    <%= link_to contact_index_path do  %>
+        <button class="btn btn-contact">Contactez-nous</button>
+    <% end %>
+  </div>
   <div class="container row justify-content-center">
     <div class="cards">
     <% @sols.each do |sol| %>
@@ -12,8 +18,21 @@
               </div>
             <% end %>
           <% end %>
-        <p class='mt-2'><%= sol.nom %></p>
-        <p><%= sol.prix %> €/m²</p>
+          <div class="d-flex justify-content-between">
+            <p class='mt-2 titre-sol'><%= sol.nom %></p>
+            <div class="prices">
+              <div class="price red d-flex">
+                <div class="prix-js red"><%= sol.prix %>
+                </div>€ <p class='mini'>/m²</p>
+              </div>
+            </div>
+          </div>
+          <p class='consigne'>Estimez le prix en indiquant le m²</p>
+          <div class="calcul-price d-flex">
+            <input class='input-m' type="number">
+            <p class="btn btn-contact btn-calcul">Calcul</p>
+            <p class="total-price"></p>
+          </div>
       </div>
     <% end %>
     </div>

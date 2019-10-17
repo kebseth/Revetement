@@ -1,17 +1,30 @@
 .sol-card{
   width: 302px;
-  height: 300px;
+  height: 270px;
   border: solid 1px #d7d7d7;
   box-shadow: 0 0 10px grey;
   border-radius: 5px;
-  background-color: rgba(40,40,40,0.2);
+  background-color: #f8f8f8 ;
   position: relative;
   p{
     color:$dark;
-    margin-left: 10px;
+    margin-left: 6px;
   }
 }
-
+.price{
+  font-size:25px;
+}
+.prices{
+  margin-right:5px;
+}
+.mini{
+  font-size:15px;
+}
+.consigne{
+  font-size:10px;
+  font-weight: light;
+  margin-top: -20px;
+}
 .suppri{
   position: absolute;
   right: 6px;
@@ -21,11 +34,31 @@
     color: red;
   }
 }
+.titre-sol{
+  font-size:20px;
+}
+.calcul-price{
+  margin-top: -15px;
+}
+.btn-calcul{
+  margin-top: 2px;
+}
+.input-m{
+  margin-left:10px;
+  width:76px;
+  height:40px;
+}
 
 .cards {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 16px;
+}
+.total-price{
+    font-size:30px;
+    margin-left:30px !important;
+    margin-top:10px !important;
+    color:red !important;
 }
 
 // Smallest device
