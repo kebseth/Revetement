@@ -93,12 +93,12 @@ Rails.application.configure do
   config.active_record.dump_schema_after_migration = false
 
   config.action_mailer.delivery_method = :smtp
-  config.action_mailer.default_url_options = { host: 'https://bouvet-revetements.cleverapps.io'}
+  config.action_mailer.default_url_options = { host: 'www.bouvet-revetements.fr'}
 
   ActionMailer::Base.smtp_settings = {
     :user_name => 'apikey',
     :password => ENV["SENDGRID_API_KEY"],
-    :domain => 'cleverapps.io',
+    :domain => 'bouvet-revetements.fr',
     :address => 'smtp.sendgrid.net',
     :port => 587,
     :authentication => :plain,

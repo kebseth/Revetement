@@ -4,10 +4,10 @@
   border: solid 1px #d7d7d7;
   box-shadow: 0 0 10px grey;
   border-radius: 5px;
-  background-color: $dark;
+  background-color: rgba(40,40,40,0.2);
   position: relative;
   p{
-    color:$creme;
+    color:$dark;
     margin-left: 10px;
   }
 }
@@ -16,11 +16,10 @@
   position: absolute;
   right: 6px;
   top:6px;
-  font-size: 25px;
-  border: solid 1px black;
-  border-radius:50%;
-  background-color:$dark;
-  padding:0 8px;
+  font-size: 50px;
+  i{
+    color: red;
+  }
 }
 
 .cards {

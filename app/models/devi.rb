@@ -6,7 +6,7 @@ class Devi < MailForm::Base
   def headers
     {
       :subject => "Demande de devis - tel: #{telephone} ",
-      :to => "bouvet.richard@hotmail.fr",
+      :to => "bouvet.revetements@gmail.com",
       :from => %("#{nom}" <#{email}>)
     }
   end
