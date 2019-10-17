@@ -16,6 +16,11 @@
     color: red;
   }
 }
+.rootnav{
+  p{
+    color:$creme !important;
+  }
+}
 nav.black {
   background: rgba(0,0,0,.9);
   height:80px;
@@ -28,6 +33,9 @@ nav.black {
   background:#474747;
   padding: 5px 10px;
   border-radius:3px;
+  a{
+    color:$creme;
+  }
   a:hover{
     color: white;
   }
